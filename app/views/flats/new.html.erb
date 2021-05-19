@@ -1,0 +1,16 @@
+<div class="category mt-3">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <h1>Add a new flat</h1>
+        <%= simple_form_for @flat do |f| %>
+          <%= f.input :name %>
+          <%= f.input :address, html5: true%>
+          <%= f.input :description, html5: true %>
+          <%= f.input :price_per_night, html5: true %>
+          <%= f.input :number_of_guests, html5: true %>
+          <%= f.submit "Add", class: "btn btn-info mt-2" %>
+        <% end %>
+        </div>
+      </div>
+  <%= link_to 'Back', flats_path, class:'btn btn-light align-right'  %>
+</div>
